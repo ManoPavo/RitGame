@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bxp23u2q1ucjm"]
+[gd_scene load_steps=21 format=3 uid="uid://bxp23u2q1ucjm"]
 
 [ext_resource type="Script" uid="uid://h7d1wp47vc1l" path="res://scripts/modo_d.gd" id="1_c2a17"]
 [ext_resource type="Script" uid="uid://bq2w7hye0ib0k" path="res://scripts/background.gd" id="2_eg57f"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://hfq6y7priuka" path="res://assets/Texto/retrobyte/RetroByte.ttf" id="13_eg57f"]
 [ext_resource type="Script" uid="uid://bonm5t64iyvkn" path="res://scripts/countdown_label.gd" id="13_eqqcs"]
 [ext_resource type="Texture2D" uid="uid://baunuuvwakkvl" path="res://assets/Personagem/Alix.png" id="15_3eu4m"]
+[ext_resource type="Script" uid="uid://bcqi7a12piws3" path="res://scenes/barra_ult.gd" id="16_dc5xa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_baapy"]
 size = Vector2(1174.5, 114)
@@ -44,6 +45,27 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3eu4m"]
+bg_color = Color(1, 0.4671299, 0.8387198, 0.07058824)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dc5xa"]
+bg_color = Color(0.7411765, 0.4862745, 1, 1)
+border_width_left = 5
+border_width_right = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="modoD" type="Node2D"]
 script = ExtResource("1_c2a17")
@@ -124,3 +146,16 @@ modulate = Color(1, 1, 1, 0.4862745)
 position = Vector2(325, 118.999985)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("15_3eu4m")
+
+[node name="BarraUlt" type="ProgressBar" parent="."]
+offset_left = 346.0
+offset_top = 391.0
+offset_right = 379.0
+offset_bottom = 582.0
+pivot_offset = Vector2(2, 0)
+theme_override_colors/font_color = Color(0.9490196, 0.9490196, 0.9490196, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_styles/background = SubResource("StyleBoxFlat_3eu4m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dc5xa")
+fill_mode = 3
+script = ExtResource("16_dc5xa")

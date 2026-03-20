@@ -1,5 +1,9 @@
 extends Node2D
 
+@onready var perfect_scene = preload("res://PerfectPopup.tscn")
+@onready var good_scene = preload("res://GoodPopup.tscn")
+@onready var bad_scene = preload("res://BadPopup.tscn")
+@onready var miss_scene = preload("res://MissPopup.tscn")
 var seta = preload("res://scenes/seta.tscn")
 var local = [Vector2(450,-100), Vector2(520,-100), Vector2(600,-100), Vector2(670,-100)]
 var lo_final = [Vector2(200,528), Vector2(400,528), Vector2(600,528), Vector2(800,528)]
@@ -16,6 +20,7 @@ var gerar_timer: Timer
 
 
 func _ready() -> void:
+	
 	Personagem.add_to_group("Personagem")
 	randomize()
 	$cora.frame = 5
@@ -77,7 +82,7 @@ func apertar_tecla(number):
 			var mySeta = Esquerda[0]
 			var distancia = mySeta.global_position.distance_to(lo_final[1])
 			if distancia <= lim_distancia:
-				
+				$BarraUlt.value += 2
 				troca_estado("Feliz")
 				var tween = mySeta.create_tween()
 				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07)
@@ -89,13 +94,18 @@ func apertar_tecla(number):
 				if distancia <= 70:
 					score += perfect
 					print("Perfect")
+					popupPerfect(0)
+					
 				elif distancia <= 120:
+					score += perfect /3
+					print("MEDIO")
+					popupPerfect(1)
+				elif distancia <= 200:
 					score += perfect / 5
-					print("Médio")
-				elif distancia <= 150:
-					score += perfect / 3
 					print("Ruim")
+					popupPerfect(2)
 				else:
+					popupPerfect(3)
 					score -= 1000
 					print("Miss")
 
@@ -105,7 +115,7 @@ func apertar_tecla(number):
 			var mySeta = Baixo[0]
 			var distancia = mySeta.global_position.distance_to(lo_final[1])
 			if distancia <= lim_distancia:
-				
+				$BarraUlt.value += 2
 				troca_estado("Feliz")
 				var tween = mySeta.create_tween()
 				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
@@ -114,13 +124,18 @@ func apertar_tecla(number):
 				if distancia <= 70:
 					score += perfect
 					print("Perfect")
+					popupPerfect(0)
+					
 				elif distancia <= 120:
-					score += perfect /5
+					score += perfect /3
 					print("MEDIO")
-				elif distancia <= 150:
-					score += perfect / 3
+					popupPerfect(1)
+				elif distancia <= 200:
+					score += perfect / 5
 					print("Ruim")
+					popupPerfect(2)
 				else:
+					popupPerfect(3)
 					score -= 1000
 					print("Miss")
 	if number == 2:
@@ -129,7 +144,7 @@ func apertar_tecla(number):
 			var mySeta = Cima[0]
 			var distancia = mySeta.global_position.distance_to(lo_final[2])
 			if distancia <= lim_distancia:
-				
+				$BarraUlt.value += 2
 				troca_estado("Feliz")
 				var tween = mySeta.create_tween()
 				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
@@ -138,13 +153,18 @@ func apertar_tecla(number):
 				if distancia <= 70:
 					score += perfect
 					print("Perfect")
+					popupPerfect(0)
+					
 				elif distancia <= 120:
-					score += perfect /5
+					score += perfect /3
 					print("MEDIO")
-				elif distancia <= 150:
-					score += perfect / 3
+					popupPerfect(1)
+				elif distancia <= 200:
+					score += perfect / 5
 					print("Ruim")
+					popupPerfect(2)
 				else:
+					popupPerfect(3)
 					score -= 1000
 					print("Miss")
 			
@@ -156,7 +176,7 @@ func apertar_tecla(number):
 			var mySeta = Direita[0]
 			var distancia = mySeta.global_position.distance_to(lo_final[3])
 			if distancia <= lim_distancia:
-				
+				$BarraUlt.value += 2
 				troca_estado("Feliz")
 				var tween = mySeta.create_tween()
 				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
@@ -165,13 +185,18 @@ func apertar_tecla(number):
 				if distancia <= 70:
 					score += perfect
 					print("Perfect")
+					popupPerfect(0)
+					
 				elif distancia <= 120:
-					score += perfect /5
+					score += perfect /3
 					print("MEDIO")
-				elif distancia <= 150:
-					score += perfect / 3
+					popupPerfect(1)
+				elif distancia <= 200:
+					score += perfect / 5
 					print("Ruim")
+					popupPerfect(2)
 				else:
+					popupPerfect(3)
 					score -= 1000
 					print("Miss")
 				
@@ -238,5 +263,36 @@ func _process(delta: float) -> void:
 		apertar_tecla(1)
 	if Input.is_action_just_pressed("Cima"):
 		apertar_tecla(2)
+		
+	if Input.is_action_just_pressed("ui_accept") and $BarraUlt.value == 100 :
+		perfect * 5
+		var btimer
+		btimer = Timer.new()
+		btimer.wait_time = 1
+		btimer.timeout.connect(func(): $BarraUlt.value += -5)
+		add_child(btimer)
+		btimer.start()
+		if $BarraUlt.value < 5:
+			btimer.stop()
+
+func popupPerfect(number):
+	if number == 0:
+		var popup = perfect_scene.instantiate()
+		add_child(popup)
+		
+	
+	if number == 1:
+		var popup = good_scene.instantiate()
+		add_child(popup)
+		
+		
+	if number == 2:
+		var popup = bad_scene.instantiate()
+		add_child(popup)
+		
+	
+	if number == 3:
+		var popup = miss_scene.instantiate()
+		add_child(popup)
 		
 	
