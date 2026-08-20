@@ -1,0 +1,1646 @@
+[
+  {
+    "tempo": 0.023,
+    "direcao": 0
+  },
+  {
+    "tempo": 0.511,
+    "direcao": 2
+  },
+  {
+    "tempo": 0.975,
+    "direcao": 3
+  },
+  {
+    "tempo": 1.277,
+    "direcao": 1
+  },
+  {
+    "tempo": 1.591,
+    "direcao": 1
+  },
+  {
+    "tempo": 1.997,
+    "direcao": 3
+  },
+  {
+    "tempo": 2.519,
+    "direcao": 3
+  },
+  {
+    "tempo": 3.007,
+    "direcao": 3
+  },
+  {
+    "tempo": 3.727,
+    "direcao": 0
+  },
+  {
+    "tempo": 3.982,
+    "direcao": 2
+  },
+  {
+    "tempo": 4.505,
+    "direcao": 1
+  },
+  {
+    "tempo": 4.772,
+    "direcao": 3
+  },
+  {
+    "tempo": 5.248,
+    "direcao": 3
+  },
+  {
+    "tempo": 5.538,
+    "direcao": 0
+  },
+  {
+    "tempo": 5.875,
+    "direcao": 3
+  },
+  {
+    "tempo": 6.351,
+    "direcao": 3
+  },
+  {
+    "tempo": 7.012,
+    "direcao": 3
+  },
+  {
+    "tempo": 7.279,
+    "direcao": 1
+  },
+  {
+    "tempo": 7.964,
+    "direcao": 0
+  },
+  {
+    "tempo": 8.51,
+    "direcao": 3
+  },
+  {
+    "tempo": 8.998,
+    "direcao": 3
+  },
+  {
+    "tempo": 9.509,
+    "direcao": 3
+  },
+  {
+    "tempo": 10.008,
+    "direcao": 3
+  },
+  {
+    "tempo": 10.484,
+    "direcao": 0
+  },
+  {
+    "tempo": 11.018,
+    "direcao": 3
+  },
+  {
+    "tempo": 11.494,
+    "direcao": 0
+  },
+  {
+    "tempo": 11.993,
+    "direcao": 0
+  },
+  {
+    "tempo": 12.504,
+    "direcao": 1
+  },
+  {
+    "tempo": 13.015,
+    "direcao": 1
+  },
+  {
+    "tempo": 13.502,
+    "direcao": 2
+  },
+  {
+    "tempo": 14.002,
+    "direcao": 3
+  },
+  {
+    "tempo": 14.501,
+    "direcao": 2
+  },
+  {
+    "tempo": 14.756,
+    "direcao": 0
+  },
+  {
+    "tempo": 15.511,
+    "direcao": 2
+  },
+  {
+    "tempo": 15.766,
+    "direcao": 0
+  },
+  {
+    "tempo": 16.498,
+    "direcao": 2
+  },
+  {
+    "tempo": 17.009,
+    "direcao": 2
+  },
+  {
+    "tempo": 17.508,
+    "direcao": 3
+  },
+  {
+    "tempo": 18.007,
+    "direcao": 3
+  },
+  {
+    "tempo": 18.495,
+    "direcao": 2
+  },
+  {
+    "tempo": 19.017,
+    "direcao": 1
+  },
+  {
+    "tempo": 19.493,
+    "direcao": 3
+  },
+  {
+    "tempo": 19.76,
+    "direcao": 1
+  },
+  {
+    "tempo": 20.503,
+    "direcao": 0
+  },
+  {
+    "tempo": 21.014,
+    "direcao": 2
+  },
+  {
+    "tempo": 21.513,
+    "direcao": 3
+  },
+  {
+    "tempo": 22.013,
+    "direcao": 2
+  },
+  {
+    "tempo": 22.512,
+    "direcao": 3
+  },
+  {
+    "tempo": 22.767,
+    "direcao": 0
+  },
+  {
+    "tempo": 23.487,
+    "direcao": 3
+  },
+  {
+    "tempo": 23.766,
+    "direcao": 0
+  },
+  {
+    "tempo": 24.253,
+    "direcao": 0
+  },
+  {
+    "tempo": 24.509,
+    "direcao": 3
+  },
+  {
+    "tempo": 24.985,
+    "direcao": 3
+  },
+  {
+    "tempo": 25.263,
+    "direcao": 3
+  },
+  {
+    "tempo": 25.519,
+    "direcao": 0
+  },
+  {
+    "tempo": 26.018,
+    "direcao": 1
+  },
+  {
+    "tempo": 26.494,
+    "direcao": 3
+  },
+  {
+    "tempo": 26.924,
+    "direcao": 3
+  },
+  {
+    "tempo": 27.214,
+    "direcao": 2
+  },
+  {
+    "tempo": 27.516,
+    "direcao": 0
+  },
+  {
+    "tempo": 27.945,
+    "direcao": 0
+  },
+  {
+    "tempo": 28.224,
+    "direcao": 1
+  },
+  {
+    "tempo": 28.735,
+    "direcao": 2
+  },
+  {
+    "tempo": 29.013,
+    "direcao": 2
+  },
+  {
+    "tempo": 29.373,
+    "direcao": 1
+  },
+  {
+    "tempo": 29.733,
+    "direcao": 3
+  },
+  {
+    "tempo": 30.012,
+    "direcao": 2
+  },
+  {
+    "tempo": 30.407,
+    "direcao": 0
+  },
+  {
+    "tempo": 30.697,
+    "direcao": 0
+  },
+  {
+    "tempo": 30.975,
+    "direcao": 3
+  },
+  {
+    "tempo": 31.266,
+    "direcao": 1
+  },
+  {
+    "tempo": 31.521,
+    "direcao": 0
+  },
+  {
+    "tempo": 31.777,
+    "direcao": 3
+  },
+  {
+    "tempo": 32.496,
+    "direcao": 3
+  },
+  {
+    "tempo": 32.763,
+    "direcao": 0
+  },
+  {
+    "tempo": 33.019,
+    "direcao": 1
+  },
+  {
+    "tempo": 33.495,
+    "direcao": 2
+  },
+  {
+    "tempo": 33.773,
+    "direcao": 0
+  },
+  {
+    "tempo": 34.249,
+    "direcao": 1
+  },
+  {
+    "tempo": 34.516,
+    "direcao": 1
+  },
+  {
+    "tempo": 34.772,
+    "direcao": 2
+  },
+  {
+    "tempo": 35.26,
+    "direcao": 0
+  },
+  {
+    "tempo": 35.515,
+    "direcao": 3
+  },
+  {
+    "tempo": 35.944,
+    "direcao": 2
+  },
+  {
+    "tempo": 36.258,
+    "direcao": 0
+  },
+  {
+    "tempo": 36.955,
+    "direcao": 2
+  },
+  {
+    "tempo": 37.268,
+    "direcao": 1
+  },
+  {
+    "tempo": 37.698,
+    "direcao": 0
+  },
+  {
+    "tempo": 37.965,
+    "direcao": 1
+  },
+  {
+    "tempo": 38.243,
+    "direcao": 1
+  },
+  {
+    "tempo": 38.51,
+    "direcao": 0
+  },
+  {
+    "tempo": 39.01,
+    "direcao": 3
+  },
+  {
+    "tempo": 39.265,
+    "direcao": 1
+  },
+  {
+    "tempo": 39.753,
+    "direcao": 2
+  },
+  {
+    "tempo": 40.008,
+    "direcao": 3
+  },
+  {
+    "tempo": 40.461,
+    "direcao": 3
+  },
+  {
+    "tempo": 40.832,
+    "direcao": 1
+  },
+  {
+    "tempo": 41.517,
+    "direcao": 0
+  },
+  {
+    "tempo": 42.028,
+    "direcao": 1
+  },
+  {
+    "tempo": 42.516,
+    "direcao": 2
+  },
+  {
+    "tempo": 42.771,
+    "direcao": 0
+  },
+  {
+    "tempo": 43.247,
+    "direcao": 3
+  },
+  {
+    "tempo": 43.503,
+    "direcao": 1
+  },
+  {
+    "tempo": 43.77,
+    "direcao": 1
+  },
+  {
+    "tempo": 44.513,
+    "direcao": 0
+  },
+  {
+    "tempo": 44.989,
+    "direcao": 2
+  },
+  {
+    "tempo": 45.5,
+    "direcao": 1
+  },
+  {
+    "tempo": 45.767,
+    "direcao": 1
+  },
+  {
+    "tempo": 46.231,
+    "direcao": 1
+  },
+  {
+    "tempo": 46.719,
+    "direcao": 0
+  },
+  {
+    "tempo": 47.009,
+    "direcao": 3
+  },
+  {
+    "tempo": 47.369,
+    "direcao": 2
+  },
+  {
+    "tempo": 47.705,
+    "direcao": 0
+  },
+  {
+    "tempo": 48.019,
+    "direcao": 2
+  },
+  {
+    "tempo": 48.518,
+    "direcao": 2
+  },
+  {
+    "tempo": 48.936,
+    "direcao": 1
+  },
+  {
+    "tempo": 49.342,
+    "direcao": 3
+  },
+  {
+    "tempo": 49.714,
+    "direcao": 3
+  },
+  {
+    "tempo": 50.004,
+    "direcao": 3
+  },
+  {
+    "tempo": 50.492,
+    "direcao": 3
+  },
+  {
+    "tempo": 51.014,
+    "direcao": 0
+  },
+  {
+    "tempo": 51.513,
+    "direcao": 0
+  },
+  {
+    "tempo": 51.989,
+    "direcao": 3
+  },
+  {
+    "tempo": 52.5,
+    "direcao": 2
+  },
+  {
+    "tempo": 52.988,
+    "direcao": 3
+  },
+  {
+    "tempo": 53.499,
+    "direcao": 3
+  },
+  {
+    "tempo": 53.766,
+    "direcao": 2
+  },
+  {
+    "tempo": 54.265,
+    "direcao": 2
+  },
+  {
+    "tempo": 54.764,
+    "direcao": 1
+  },
+  {
+    "tempo": 55.02,
+    "direcao": 0
+  },
+  {
+    "tempo": 55.275,
+    "direcao": 2
+  },
+  {
+    "tempo": 55.716,
+    "direcao": 1
+  },
+  {
+    "tempo": 56.018,
+    "direcao": 0
+  },
+  {
+    "tempo": 56.424,
+    "direcao": 0
+  },
+  {
+    "tempo": 56.75,
+    "direcao": 0
+  },
+  {
+    "tempo": 57.017,
+    "direcao": 2
+  },
+  {
+    "tempo": 57.504,
+    "direcao": 0
+  },
+  {
+    "tempo": 57.969,
+    "direcao": 0
+  },
+  {
+    "tempo": 58.433,
+    "direcao": 3
+  },
+  {
+    "tempo": 58.746,
+    "direcao": 1
+  },
+  {
+    "tempo": 59.014,
+    "direcao": 3
+  },
+  {
+    "tempo": 59.49,
+    "direcao": 1
+  },
+  {
+    "tempo": 60.012,
+    "direcao": 3
+  },
+  {
+    "tempo": 60.267,
+    "direcao": 3
+  },
+  {
+    "tempo": 60.743,
+    "direcao": 3
+  },
+  {
+    "tempo": 61.01,
+    "direcao": 1
+  },
+  {
+    "tempo": 61.312,
+    "direcao": 3
+  },
+  {
+    "tempo": 61.974,
+    "direcao": 2
+  },
+  {
+    "tempo": 62.264,
+    "direcao": 3
+  },
+  {
+    "tempo": 62.752,
+    "direcao": 2
+  },
+  {
+    "tempo": 63.007,
+    "direcao": 1
+  },
+  {
+    "tempo": 63.507,
+    "direcao": 1
+  },
+  {
+    "tempo": 63.994,
+    "direcao": 1
+  },
+  {
+    "tempo": 64.25,
+    "direcao": 0
+  },
+  {
+    "tempo": 64.505,
+    "direcao": 0
+  },
+  {
+    "tempo": 64.993,
+    "direcao": 1
+  },
+  {
+    "tempo": 65.515,
+    "direcao": 2
+  },
+  {
+    "tempo": 66.014,
+    "direcao": 2
+  },
+  {
+    "tempo": 66.456,
+    "direcao": 1
+  },
+  {
+    "tempo": 66.769,
+    "direcao": 2
+  },
+  {
+    "tempo": 67.408,
+    "direcao": 3
+  },
+  {
+    "tempo": 68.0,
+    "direcao": 1
+  },
+  {
+    "tempo": 68.255,
+    "direcao": 1
+  },
+  {
+    "tempo": 68.731,
+    "direcao": 3
+  },
+  {
+    "tempo": 69.01,
+    "direcao": 2
+  },
+  {
+    "tempo": 69.973,
+    "direcao": 1
+  },
+  {
+    "tempo": 70.484,
+    "direcao": 3
+  },
+  {
+    "tempo": 70.763,
+    "direcao": 2
+  },
+  {
+    "tempo": 71.018,
+    "direcao": 0
+  },
+  {
+    "tempo": 71.378,
+    "direcao": 1
+  },
+  {
+    "tempo": 71.634,
+    "direcao": 0
+  },
+  {
+    "tempo": 71.982,
+    "direcao": 1
+  },
+  {
+    "tempo": 72.493,
+    "direcao": 3
+  },
+  {
+    "tempo": 73.004,
+    "direcao": 0
+  },
+  {
+    "tempo": 73.514,
+    "direcao": 2
+  },
+  {
+    "tempo": 74.014,
+    "direcao": 0
+  },
+  {
+    "tempo": 74.501,
+    "direcao": 0
+  },
+  {
+    "tempo": 75.012,
+    "direcao": 2
+  },
+  {
+    "tempo": 75.476,
+    "direcao": 3
+  },
+  {
+    "tempo": 75.755,
+    "direcao": 2
+  },
+  {
+    "tempo": 76.51,
+    "direcao": 3
+  },
+  {
+    "tempo": 76.986,
+    "direcao": 1
+  },
+  {
+    "tempo": 77.508,
+    "direcao": 2
+  },
+  {
+    "tempo": 77.973,
+    "direcao": 0
+  },
+  {
+    "tempo": 78.507,
+    "direcao": 1
+  },
+  {
+    "tempo": 79.018,
+    "direcao": 1
+  },
+  {
+    "tempo": 79.517,
+    "direcao": 0
+  },
+  {
+    "tempo": 80.016,
+    "direcao": 3
+  },
+  {
+    "tempo": 80.48,
+    "direcao": 0
+  },
+  {
+    "tempo": 80.771,
+    "direcao": 0
+  },
+  {
+    "tempo": 81.27,
+    "direcao": 3
+  },
+  {
+    "tempo": 81.665,
+    "direcao": 2
+  },
+  {
+    "tempo": 82.001,
+    "direcao": 1
+  },
+  {
+    "tempo": 82.257,
+    "direcao": 1
+  },
+  {
+    "tempo": 82.744,
+    "direcao": 3
+  },
+  {
+    "tempo": 83.244,
+    "direcao": 3
+  },
+  {
+    "tempo": 83.685,
+    "direcao": 1
+  },
+  {
+    "tempo": 83.998,
+    "direcao": 3
+  },
+  {
+    "tempo": 84.474,
+    "direcao": 1
+  },
+  {
+    "tempo": 85.008,
+    "direcao": 2
+  },
+  {
+    "tempo": 85.484,
+    "direcao": 0
+  },
+  {
+    "tempo": 85.763,
+    "direcao": 0
+  },
+  {
+    "tempo": 86.018,
+    "direcao": 2
+  },
+  {
+    "tempo": 86.494,
+    "direcao": 3
+  },
+  {
+    "tempo": 86.75,
+    "direcao": 2
+  },
+  {
+    "tempo": 87.017,
+    "direcao": 2
+  },
+  {
+    "tempo": 87.481,
+    "direcao": 2
+  },
+  {
+    "tempo": 87.737,
+    "direcao": 0
+  },
+  {
+    "tempo": 87.992,
+    "direcao": 1
+  },
+  {
+    "tempo": 88.445,
+    "direcao": 1
+  },
+  {
+    "tempo": 88.77,
+    "direcao": 3
+  },
+  {
+    "tempo": 89.095,
+    "direcao": 3
+  },
+  {
+    "tempo": 89.513,
+    "direcao": 0
+  },
+  {
+    "tempo": 89.768,
+    "direcao": 0
+  },
+  {
+    "tempo": 90.198,
+    "direcao": 1
+  },
+  {
+    "tempo": 90.488,
+    "direcao": 2
+  },
+  {
+    "tempo": 90.918,
+    "direcao": 1
+  },
+  {
+    "tempo": 91.266,
+    "direcao": 3
+  },
+  {
+    "tempo": 91.765,
+    "direcao": 0
+  },
+  {
+    "tempo": 92.253,
+    "direcao": 2
+  },
+  {
+    "tempo": 92.508,
+    "direcao": 1
+  },
+  {
+    "tempo": 92.996,
+    "direcao": 3
+  },
+  {
+    "tempo": 93.251,
+    "direcao": 3
+  },
+  {
+    "tempo": 93.762,
+    "direcao": 3
+  },
+  {
+    "tempo": 94.238,
+    "direcao": 1
+  },
+  {
+    "tempo": 94.505,
+    "direcao": 3
+  },
+  {
+    "tempo": 94.772,
+    "direcao": 2
+  },
+  {
+    "tempo": 95.26,
+    "direcao": 3
+  },
+  {
+    "tempo": 95.515,
+    "direcao": 0
+  },
+  {
+    "tempo": 95.945,
+    "direcao": 2
+  },
+  {
+    "tempo": 96.479,
+    "direcao": 3
+  },
+  {
+    "tempo": 96.746,
+    "direcao": 0
+  },
+  {
+    "tempo": 97.268,
+    "direcao": 0
+  },
+  {
+    "tempo": 97.768,
+    "direcao": 2
+  },
+  {
+    "tempo": 98.197,
+    "direcao": 0
+  },
+  {
+    "tempo": 98.499,
+    "direcao": 3
+  },
+  {
+    "tempo": 98.766,
+    "direcao": 3
+  },
+  {
+    "tempo": 99.254,
+    "direcao": 3
+  },
+  {
+    "tempo": 99.741,
+    "direcao": 0
+  },
+  {
+    "tempo": 100.02,
+    "direcao": 0
+  },
+  {
+    "tempo": 100.484,
+    "direcao": 3
+  },
+  {
+    "tempo": 100.751,
+    "direcao": 0
+  },
+  {
+    "tempo": 101.007,
+    "direcao": 1
+  },
+  {
+    "tempo": 101.274,
+    "direcao": 1
+  },
+  {
+    "tempo": 101.761,
+    "direcao": 3
+  },
+  {
+    "tempo": 102.203,
+    "direcao": 1
+  },
+  {
+    "tempo": 102.516,
+    "direcao": 0
+  },
+  {
+    "tempo": 103.004,
+    "direcao": 2
+  },
+  {
+    "tempo": 103.503,
+    "direcao": 0
+  },
+  {
+    "tempo": 103.77,
+    "direcao": 1
+  },
+  {
+    "tempo": 104.2,
+    "direcao": 2
+  },
+  {
+    "tempo": 104.478,
+    "direcao": 3
+  },
+  {
+    "tempo": 105.012,
+    "direcao": 1
+  },
+  {
+    "tempo": 105.488,
+    "direcao": 2
+  },
+  {
+    "tempo": 105.767,
+    "direcao": 1
+  },
+  {
+    "tempo": 106.022,
+    "direcao": 3
+  },
+  {
+    "tempo": 106.405,
+    "direcao": 0
+  },
+  {
+    "tempo": 106.754,
+    "direcao": 1
+  },
+  {
+    "tempo": 107.16,
+    "direcao": 3
+  },
+  {
+    "tempo": 107.485,
+    "direcao": 2
+  },
+  {
+    "tempo": 107.95,
+    "direcao": 2
+  },
+  {
+    "tempo": 108.251,
+    "direcao": 1
+  },
+  {
+    "tempo": 108.507,
+    "direcao": 0
+  },
+  {
+    "tempo": 108.867,
+    "direcao": 0
+  },
+  {
+    "tempo": 109.227,
+    "direcao": 0
+  },
+  {
+    "tempo": 109.633,
+    "direcao": 3
+  },
+  {
+    "tempo": 110.005,
+    "direcao": 2
+  },
+  {
+    "tempo": 110.422,
+    "direcao": 2
+  },
+  {
+    "tempo": 111.711,
+    "direcao": 1
+  },
+  {
+    "tempo": 112.013,
+    "direcao": 3
+  },
+  {
+    "tempo": 112.443,
+    "direcao": 0
+  },
+  {
+    "tempo": 112.826,
+    "direcao": 1
+  },
+  {
+    "tempo": 113.499,
+    "direcao": 0
+  },
+  {
+    "tempo": 113.755,
+    "direcao": 3
+  },
+  {
+    "tempo": 114.265,
+    "direcao": 3
+  },
+  {
+    "tempo": 114.521,
+    "direcao": 2
+  },
+  {
+    "tempo": 115.02,
+    "direcao": 2
+  },
+  {
+    "tempo": 115.496,
+    "direcao": 2
+  },
+  {
+    "tempo": 115.751,
+    "direcao": 3
+  },
+  {
+    "tempo": 116.518,
+    "direcao": 2
+  },
+  {
+    "tempo": 116.982,
+    "direcao": 1
+  },
+  {
+    "tempo": 117.516,
+    "direcao": 0
+  },
+  {
+    "tempo": 117.772,
+    "direcao": 0
+  },
+  {
+    "tempo": 118.201,
+    "direcao": 1
+  },
+  {
+    "tempo": 118.48,
+    "direcao": 0
+  },
+  {
+    "tempo": 118.735,
+    "direcao": 3
+  },
+  {
+    "tempo": 119.002,
+    "direcao": 0
+  },
+  {
+    "tempo": 119.385,
+    "direcao": 0
+  },
+  {
+    "tempo": 119.699,
+    "direcao": 0
+  },
+  {
+    "tempo": 120.012,
+    "direcao": 0
+  },
+  {
+    "tempo": 120.5,
+    "direcao": 0
+  },
+  {
+    "tempo": 120.918,
+    "direcao": 3
+  },
+  {
+    "tempo": 121.301,
+    "direcao": 3
+  },
+  {
+    "tempo": 121.742,
+    "direcao": 1
+  },
+  {
+    "tempo": 122.021,
+    "direcao": 2
+  },
+  {
+    "tempo": 122.497,
+    "direcao": 3
+  },
+  {
+    "tempo": 123.019,
+    "direcao": 2
+  },
+  {
+    "tempo": 123.519,
+    "direcao": 3
+  },
+  {
+    "tempo": 123.995,
+    "direcao": 0
+  },
+  {
+    "tempo": 124.517,
+    "direcao": 0
+  },
+  {
+    "tempo": 125.016,
+    "direcao": 2
+  },
+  {
+    "tempo": 125.504,
+    "direcao": 2
+  },
+  {
+    "tempo": 125.933,
+    "direcao": 0
+  },
+  {
+    "tempo": 126.259,
+    "direcao": 0
+  },
+  {
+    "tempo": 126.514,
+    "direcao": 2
+  },
+  {
+    "tempo": 126.769,
+    "direcao": 0
+  },
+  {
+    "tempo": 127.222,
+    "direcao": 0
+  },
+  {
+    "tempo": 127.489,
+    "direcao": 0
+  },
+  {
+    "tempo": 128.012,
+    "direcao": 0
+  },
+  {
+    "tempo": 128.383,
+    "direcao": 1
+  },
+  {
+    "tempo": 128.766,
+    "direcao": 2
+  },
+  {
+    "tempo": 129.498,
+    "direcao": 0
+  },
+  {
+    "tempo": 129.974,
+    "direcao": 3
+  },
+  {
+    "tempo": 130.415,
+    "direcao": 1
+  },
+  {
+    "tempo": 130.752,
+    "direcao": 0
+  },
+  {
+    "tempo": 131.019,
+    "direcao": 0
+  },
+  {
+    "tempo": 131.495,
+    "direcao": 0
+  },
+  {
+    "tempo": 132.005,
+    "direcao": 1
+  },
+  {
+    "tempo": 132.261,
+    "direcao": 2
+  },
+  {
+    "tempo": 132.76,
+    "direcao": 3
+  },
+  {
+    "tempo": 133.016,
+    "direcao": 3
+  },
+  {
+    "tempo": 133.317,
+    "direcao": 3
+  },
+  {
+    "tempo": 134.014,
+    "direcao": 3
+  },
+  {
+    "tempo": 134.513,
+    "direcao": 1
+  },
+  {
+    "tempo": 134.769,
+    "direcao": 2
+  },
+  {
+    "tempo": 135.512,
+    "direcao": 3
+  },
+  {
+    "tempo": 136.011,
+    "direcao": 0
+  },
+  {
+    "tempo": 136.51,
+    "direcao": 3
+  },
+  {
+    "tempo": 136.998,
+    "direcao": 3
+  },
+  {
+    "tempo": 138.019,
+    "direcao": 1
+  },
+  {
+    "tempo": 138.449,
+    "direcao": 3
+  },
+  {
+    "tempo": 138.762,
+    "direcao": 1
+  },
+  {
+    "tempo": 139.424,
+    "direcao": 2
+  },
+  {
+    "tempo": 140.016,
+    "direcao": 1
+  },
+  {
+    "tempo": 140.469,
+    "direcao": 1
+  },
+  {
+    "tempo": 140.725,
+    "direcao": 1
+  },
+  {
+    "tempo": 141.015,
+    "direcao": 1
+  },
+  {
+    "tempo": 141.978,
+    "direcao": 2
+  },
+  {
+    "tempo": 142.512,
+    "direcao": 0
+  },
+  {
+    "tempo": 143.012,
+    "direcao": 2
+  },
+  {
+    "tempo": 143.395,
+    "direcao": 1
+  },
+  {
+    "tempo": 143.755,
+    "direcao": 3
+  },
+  {
+    "tempo": 144.242,
+    "direcao": 1
+  },
+  {
+    "tempo": 144.498,
+    "direcao": 0
+  },
+  {
+    "tempo": 145.009,
+    "direcao": 3
+  },
+  {
+    "tempo": 145.508,
+    "direcao": 3
+  },
+  {
+    "tempo": 146.007,
+    "direcao": 0
+  },
+  {
+    "tempo": 146.506,
+    "direcao": 2
+  },
+  {
+    "tempo": 147.017,
+    "direcao": 2
+  },
+  {
+    "tempo": 147.493,
+    "direcao": 3
+  },
+  {
+    "tempo": 148.016,
+    "direcao": 3
+  },
+  {
+    "tempo": 148.515,
+    "direcao": 0
+  },
+  {
+    "tempo": 149.014,
+    "direcao": 0
+  },
+  {
+    "tempo": 149.513,
+    "direcao": 0
+  },
+  {
+    "tempo": 149.978,
+    "direcao": 1
+  },
+  {
+    "tempo": 150.767,
+    "direcao": 3
+  },
+  {
+    "tempo": 151.51,
+    "direcao": 0
+  },
+  {
+    "tempo": 152.009,
+    "direcao": 3
+  },
+  {
+    "tempo": 152.509,
+    "direcao": 0
+  },
+  {
+    "tempo": 152.973,
+    "direcao": 1
+  },
+  {
+    "tempo": 153.507,
+    "direcao": 0
+  },
+  {
+    "tempo": 153.96,
+    "direcao": 2
+  },
+  {
+    "tempo": 154.471,
+    "direcao": 0
+  },
+  {
+    "tempo": 154.761,
+    "direcao": 2
+  },
+  {
+    "tempo": 155.272,
+    "direcao": 1
+  },
+  {
+    "tempo": 155.69,
+    "direcao": 2
+  },
+  {
+    "tempo": 156.015,
+    "direcao": 1
+  },
+  {
+    "tempo": 156.27,
+    "direcao": 3
+  },
+  {
+    "tempo": 156.758,
+    "direcao": 1
+  },
+  {
+    "tempo": 157.013,
+    "direcao": 3
+  },
+  {
+    "tempo": 157.524,
+    "direcao": 2
+  },
+  {
+    "tempo": 158.012,
+    "direcao": 3
+  },
+  {
+    "tempo": 158.766,
+    "direcao": 2
+  },
+  {
+    "tempo": 159.092,
+    "direcao": 3
+  },
+  {
+    "tempo": 159.347,
+    "direcao": 1
+  },
+  {
+    "tempo": 159.602,
+    "direcao": 2
+  },
+  {
+    "tempo": 159.916,
+    "direcao": 3
+  },
+  {
+    "tempo": 160.485,
+    "direcao": 0
+  },
+  {
+    "tempo": 161.007,
+    "direcao": 0
+  },
+  {
+    "tempo": 161.506,
+    "direcao": 2
+  },
+  {
+    "tempo": 162.017,
+    "direcao": 3
+  },
+  {
+    "tempo": 162.516,
+    "direcao": 2
+  },
+  {
+    "tempo": 163.016,
+    "direcao": 2
+  },
+  {
+    "tempo": 163.515,
+    "direcao": 1
+  },
+  {
+    "tempo": 163.991,
+    "direcao": 3
+  },
+  {
+    "tempo": 164.502,
+    "direcao": 1
+  },
+  {
+    "tempo": 165.013,
+    "direcao": 1
+  },
+  {
+    "tempo": 165.512,
+    "direcao": 2
+  },
+  {
+    "tempo": 166.011,
+    "direcao": 2
+  },
+  {
+    "tempo": 166.499,
+    "direcao": 0
+  },
+  {
+    "tempo": 166.975,
+    "direcao": 3
+  },
+  {
+    "tempo": 167.52,
+    "direcao": 2
+  },
+  {
+    "tempo": 167.88,
+    "direcao": 3
+  },
+  {
+    "tempo": 168.496,
+    "direcao": 0
+  },
+  {
+    "tempo": 168.995,
+    "direcao": 2
+  },
+  {
+    "tempo": 169.517,
+    "direcao": 1
+  },
+  {
+    "tempo": 170.005,
+    "direcao": 3
+  },
+  {
+    "tempo": 170.516,
+    "direcao": 2
+  },
+  {
+    "tempo": 170.992,
+    "direcao": 2
+  },
+  {
+    "tempo": 171.491,
+    "direcao": 2
+  },
+  {
+    "tempo": 171.758,
+    "direcao": 0
+  },
+  {
+    "tempo": 172.501,
+    "direcao": 2
+  },
+  {
+    "tempo": 173.012,
+    "direcao": 0
+  },
+  {
+    "tempo": 173.511,
+    "direcao": 3
+  },
+  {
+    "tempo": 174.01,
+    "direcao": 2
+  },
+  {
+    "tempo": 174.486,
+    "direcao": 3
+  },
+  {
+    "tempo": 175.009,
+    "direcao": 0
+  },
+  {
+    "tempo": 175.485,
+    "direcao": 3
+  },
+  {
+    "tempo": 175.752,
+    "direcao": 0
+  },
+  {
+    "tempo": 176.692,
+    "direcao": 3
+  }
+]

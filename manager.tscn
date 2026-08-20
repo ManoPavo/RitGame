@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://wfieq2b4u72o"]
+
+[sub_resource type="GDScript" id="GDScript_af807"]
+script/source = "extends Node
+
+@export var dialogo: PackedScene
+
+var dialogobox = null
+var is_showing_dialog: bool = false
+
+
+func start_dialog(text: Array[String], dialog_position: Vector2) -> void:
+	if is_showing_dialog:
+		return
+
+	if dialogo == null:
+		print(\"ERRO: Dialog não foi colocado no Manager!\")
+		return
+
+	dialogobox = dialogo.instantiate()
+
+	get_tree().current_scene.add_child(dialogobox)
+
+	dialogobox.letras_display = text
+	dialogobox.global_position = dialog_position
+
+	is_showing_dialog = true
+
+	dialogobox.dialog_finished.connect(dialog_finished)
+
+	dialogobox.show_text()
+
+
+func dialog_finished() -> void:
+	is_showing_dialog = false
+
+	if dialogobox:
+		dialogobox.queue_free()
+		dialogobox = null
+"
+
+[node name="manager" type="Node" unique_id=1806098958]
+script = SubResource("GDScript_af807")

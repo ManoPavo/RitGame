@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dyx63k57rn2i3"]
+
+[ext_resource type="Script" uid="uid://cwfwtm0fkuvma" path="res://boss_1.gd" id="1_2nlvs"]
+[ext_resource type="Texture2D" uid="uid://gyoyvtaut7qc" path="res://170666-800-auto(1).png" id="2_y66il"]
+
+[node name="boss1" type="Node2D" unique_id=1815406032]
+script = ExtResource("1_2nlvs")
+
+[node name="pulapirata" type="Sprite2D" parent="." unique_id=1542412008]
+position = Vector2(567.75, 261)
+scale = Vector2(0.55312496, 0.59)
+texture = ExtResource("2_y66il")

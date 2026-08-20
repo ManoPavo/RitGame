@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cp1aid1b8poah"]
+
+[ext_resource type="Script" uid="uid://cnufqntomygfg" path="res://explosao.gd" id="1_nveuj"]
+
+[node name="explosao" type="Node2D" unique_id=1013475483]
+script = ExtResource("1_nveuj")
