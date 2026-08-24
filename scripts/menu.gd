@@ -35,7 +35,7 @@ func _on_button_mouse_exited(button: Button):
 
 
 func _on_play_button_pressed() -> void:
-	Transicao.visible = true
+	
 	Music.stop_music()
 	get_tree().change_scene_to_file("res://scenes/modo_d.tscn")
 

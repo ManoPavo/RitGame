@@ -1,46 +1,70 @@
 [gd_scene format=3 uid="uid://ba7s28g884x3t"]
 
-[ext_resource type="Texture2D" uid="uid://c2g8ooxcj4egn" path="res://assets/Sprite/Setinha.png" id="1_xuu5o"]
+[ext_resource type="Script" uid="uid://dsobups0c0ht6" path="res://scripts/seta.gd" id="1_gtacy"]
+[ext_resource type="Texture2D" uid="uid://ca12vhn058r8a" path="res://assets/Sprite/Caqui-Sheet.png" id="1_ra3kq"]
 
-[sub_resource type="GDScript" id="GDScript_idjkk"]
-script/source = "extends Node2D
-signal missou
-var speed = 500
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtacy"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(0, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5jah"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(0, 32, 32, 32)
 
-func _ready() -> void:
-	await get_tree().process_frame
-	
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubf6s"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(32, 32, 32, 32)
 
-	var sprite = find_child(\"Sprite2D\", true, false)
-	if sprite == null:
-		return
-		
-	if is_in_group(\"Esquerda\"):
-		sprite.flip_h = true
-		sprite.rotation_degrees = 0
-	elif is_in_group(\"Direita\"):
-		sprite.flip_h = false
-		sprite.rotation_degrees = 0
-	elif is_in_group(\"Cima\"):
-		sprite.rotation_degrees = -90
-	elif is_in_group(\"Baixo\"):
-		sprite.rotation_degrees = 90
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqweb"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(64, 32, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt1th"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(96, 32, 32, 32)
 
-func _process(delta) -> void:
-	global_position.y += speed * delta
-	
-	
-	if global_position.y > 650:
-		var sprites = get_tree().get_nodes_in_group(\"Personagem\")
-		missou.emit()
-		queue_free()
-"
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb38j"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ony0"]
+atlas = ExtResource("1_ra3kq")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s1fef"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtacy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5jah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubf6s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqweb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt1th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb38j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ony0")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 50.0
+}]
 
 [node name="seta" type="Node2D" unique_id=424919279]
-script = SubResource("GDScript_idjkk")
+script = ExtResource("1_gtacy")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=756735889]
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("1_xuu5o")
+[node name="caqui" type="AnimatedSprite2D" parent="." unique_id=1905454030]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_s1fef")
+frame = 6
+frame_progress = 1.0

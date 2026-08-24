@@ -12,11 +12,11 @@ var dialogos = [
 	"Que lugar estranho...",
 	"Eu não lembro de ter vindo aqui.",
 	"Será que tem alguém por perto?",
-	"Isso está ficando estranho...",
-	"Eu acho que ouvi alguma coisa.",
-	"Melhor continuar andando.",
+	"Isso está ficando estranho",
+	"Eu acho que ouvi alguma coisa",
+	"Melhor continuar andando",
 	"Você também está ouvindo isso?",
-	"Não olhe para trás..."
+	"Não olhe para trás"
 ]
 
 var dialogos_disponiveis = []

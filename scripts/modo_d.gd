@@ -1,5 +1,5 @@
 extends Node2D
-
+var boss_morto = false
 var per = preload("res://PerfectPopup.tscn")
 var good = preload("res://GoodPopup.tscn")
 var bad = preload("res://BadPopup.tscn")
@@ -7,6 +7,7 @@ var miss = preload("res://MissPopup.tscn")
 var seta = preload("res://scenes/seta.tscn")
 var dialogo = preload("res://dialogo.tscn")
 var boss = preload("res://boss_1.tscn")
+@onready var camera = $Camera2D
 var local = [Vector2(450,-100), Vector2(520,-100), Vector2(600,-100), Vector2(670,-100)]
 var lo_final = [Vector2(450,528), Vector2(520,528), Vector2(600,528), Vector2(670,528)]
 var score = 0
@@ -14,12 +15,15 @@ var vida = 6
 var perfect = 1000
 var animando = false
 var lim_distancia = 200
+
+var diminuir_timer: Timer
 @onready var Personagem = $personagem
 @onready var countdown_label = $CountdownLabel
 enum {Idle, Feliz, dano}
 var estado_atual = "Idle"
 var gerar_timer: Timer
-
+var diminuicao = 0.1
+var tempo_minimo = 0.2
 
 func _ready() -> void:
 	var dia = dialogo.instantiate()
@@ -41,8 +45,6 @@ func _ready() -> void:
 	var bos = boss.instantiate()
 	add_child(bos)
 func começarGame():
-	# Contagem de 1 até 3 usando tween
-	
 	
 	gerar_timer = Timer.new()
 	gerar_timer.wait_time = 0.5
@@ -50,7 +52,13 @@ func começarGame():
 	gerar_timer.timeout.connect(gerar_cordenada)
 	add_child(gerar_timer)
 	gerar_timer.start()
-	print("BPM usado: ", Global.bpm)
+	
+	diminuir_timer = Timer.new()
+	diminuir_timer.wait_time = 10.0
+	diminuir_timer.one_shot = false
+	diminuir_timer.timeout.connect(diminuir_tempo)
+	add_child(diminuir_timer)
+	diminuir_timer.start()
 	
 	if Global.audio_stream:
 		var player = AudioStreamPlayer.new()
@@ -63,7 +71,13 @@ func começarGame():
 		player.play()
 		
 	
-	
+func diminuir_tempo():
+	if gerar_timer.wait_time > tempo_minimo:
+		gerar_timer.wait_time -= diminuicao
+		
+		if gerar_timer.wait_time < tempo_minimo:
+			gerar_timer.wait_time = tempo_minimo
+	print("Novo tempo: ", gerar_timer.wait_time)
 func gerar_cordenada():
 	var random = randi() % local.size()
 	var spawn = seta.instantiate()
@@ -91,17 +105,14 @@ func apertar_tecla(number):
 				
 				troca_estado("Feliz")
 				var tween = mySeta.create_tween()
-				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07)
-				tween.tween_property(mySeta, "modulate:a", 0.0, 0.07)
-				tween.tween_callback(func():
-					if is_instance_valid(mySeta):
-						mySeta.queue_free()
-						)
+				if mySeta.has_method("anima"):
+					mySeta.anima()
 				if distancia <= 50:
 					score += perfect
 					var p = per.instantiate()
 					add_child(p)
 					$BarraUlt.value -= 1
+					tremer_tela()
 					print("Perfect")
 				elif distancia <= 100:
 					score += perfect / 5
@@ -127,12 +138,14 @@ func apertar_tecla(number):
 			if distancia <= lim_distancia:
 				
 				troca_estado("Feliz")
-				var tween = mySeta.create_tween()
-				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
-				tween.tween_property(mySeta, "modulate:a", 0.0, 0.07)      
-				tween.tween_callback(mySeta.queue_free)
+				if mySeta.has_method("anima"):
+					mySeta.anima()
+				
 				if distancia <= 50:
+					
 					score += perfect
+					$BarraUlt.value -= 1
+					tremer_tela()
 					var p = per.instantiate()
 					add_child(p)
 					print("Perfect")
@@ -159,12 +172,12 @@ func apertar_tecla(number):
 			if distancia <= lim_distancia:
 				
 				troca_estado("Feliz")
-				var tween = mySeta.create_tween()
-				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
-				tween.tween_property(mySeta, "modulate:a", 0.0, 0.07)      
-				tween.tween_callback(mySeta.queue_free)
+				if mySeta.has_method("anima"):
+					mySeta.anima()
 				if distancia <= 50:
 					score += perfect
+					$BarraUlt.value -= 1
+					tremer_tela()
 					var p = per.instantiate()
 					add_child(p)
 					print("Perfect")
@@ -193,12 +206,12 @@ func apertar_tecla(number):
 			if distancia <= lim_distancia:
 				
 				troca_estado("Feliz")
-				var tween = mySeta.create_tween()
-				tween.tween_property(mySeta, "scale", Vector2(2, 2), 0.07) 
-				tween.tween_property(mySeta, "modulate:a", 0.0, 0.07)      
-				tween.tween_callback(mySeta.queue_free)
+				if mySeta.has_method("anima"):
+					mySeta.anima()
 				if distancia <= 50:
 					score += perfect
+					$BarraUlt.value -= 1
+					tremer_tela()
 					var p = per.instantiate()
 					add_child(p)
 					print("Perfect")
@@ -219,47 +232,50 @@ func apertar_tecla(number):
 					print("Miss")
 				
 func _physics_process(delta: float) -> void:
-	
-	match estado_atual:
-		"Idle":
-			Personagem.texture = preload("res://assets/Personagem/garota_idle.png")
-		"Feliz":
-			Personagem.texture = preload("res://assets/Personagem/garota_happy.png")
-		"dano":
-			Personagem.texture = preload("res://assets/Personagem/garota_Braba.png")
+	pass
+	#match estado_atual:
+		#"Idle":
+			#Personagem.texture = preload("res://assets/Personagem/garota_idle.png")
+		#"Feliz":
+			#Personagem.texture = preload("res://assets/Personagem/garota_happy.png")
+		#"dano":
+			#Personagem.texture = preload("res://assets/Personagem/garota_Braba.png")
 	
 func troca_estado(novo_estado):
-	if novo_estado != estado_atual:
-		estado_atual = novo_estado
+	pass#if novo_estado != estado_atual:
+		#estado_atual = novo_estado
 func fazer_tween():
-		troca_estado("dano")
-		var tween = create_tween()
-		var intensidade = 10.0 
-		var duracao = 0.05
-		tween.tween_property(Personagem, "position:x", 162 - intensidade, duracao)
-		tween.tween_property(Personagem, "position:x", 162 - intensidade, duracao)
-		tween.tween_property(Personagem, "position:x", 162 + intensidade / 2, duracao)
-		tween.tween_property(Personagem, "position:x", 162, duracao)
+	
+	if boss_morto:
+		return
+	troca_estado("dano")
+	var tween = create_tween()
+	var intensidade = 10.0
+	var duracao = 0.05
+	tween.tween_property(Personagem, "position:x", 162 - intensidade, duracao)
+	tween.tween_property(Personagem, "position:x", 162 - intensidade, duracao)
+	tween.tween_property(Personagem, "position:x", 162 + intensidade / 2, duracao)
+	tween.tween_property(Personagem, "position:x", 162, duracao)
 		
-		var tweenLife = create_tween()
-		tweenLife.tween_property($cora, "scale", Vector2(1.5, 1.5), 0.07)
-		tweenLife.tween_property($cora, "scale", Vector2(1, 1), 0.07)
-		vida -=1 
-		if vida == 6:
-			$cora.frame = 5
-		if vida == 5:
-			$cora.frame = 4
-		if vida == 4:
-			$cora.frame = 3
-		if vida == 3:
-			$cora.frame = 2
-		if vida == 2:
-			$cora.frame = 1
-		if vida == 1:
-			$cora.frame = 0
-		if vida == 0:
-			pass
-		
+	var tweenLife = create_tween()
+	tweenLife.tween_property($cora, "scale", Vector2(1.5, 1.5), 0.07)
+	tweenLife.tween_property($cora, "scale", Vector2(1, 1), 0.07)
+	vida -=1
+	if vida == 6:
+		$cora.frame = 5
+	if vida == 5:
+		$cora.frame = 4
+	if vida == 4:
+		$cora.frame = 3
+	if vida == 3:
+		$cora.frame = 2
+	if vida == 2:
+		$cora.frame = 1
+	if vida == 1:
+		$cora.frame = 0
+	if vida <= 0:
+		get_tree().change_scene_to_file("res://scenes/death.tscn")
+	
 
 
 
@@ -267,16 +283,17 @@ func _process(delta: float) -> void:
 	
 	if $BarraUlt.value <= 0 :
 		criar_explosao(Vector2(550,200))
+		boss_morto = true
 		
+		await get_tree().create_timer(7).timeout
+		get_tree().change_scene_to_file("res://scenes/menu.tscn")
 		
 	
-	if gerar_timer != null:
-		gerar_timer.wait_time = 60.0 / Global.bpm
 	
-	if vida <= 0:
+	
 		
-		get_tree().change_scene_to_file("res://scenes/death.tscn") 
-	
+		
+		
 	$score.text = str(score)
 	
 	if Input.is_action_just_pressed("Esquerda"):
@@ -303,3 +320,15 @@ func criar_explosao(posicao: Vector2):
 	var tween = create_tween()
 	tween.tween_property(self, "modulate", Color.BLACK, 3.0)
 	
+func tremer_tela():
+	var posicao_original = camera.position
+	var intensidade = 4.0
+	var duracao = 0.05
+	
+	var tween = create_tween()
+	
+	tween.tween_property(camera, "position:x", posicao_original.x - intensidade, duracao)
+	tween.tween_property(camera, "position:x", posicao_original.x + intensidade, duracao)
+	tween.tween_property(camera, "position:y", posicao_original.y - intensidade, duracao)
+	tween.tween_property(camera, "position:y", posicao_original.y + intensidade, duracao)
+	tween.tween_property(camera, "position", Vector2(577,324), duracao)

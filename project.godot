@@ -28,6 +28,7 @@ Music="*res://scenes/music.tscn"
 Tons="*res://scripts/tons.gd"
 Global="*res://scripts/global.gd"
 Manager="*uid://wfieq2b4u72o"
+Setinha="*uid://dsobups0c0ht6"
 
 [display]
 
@@ -39,9 +40,9 @@ window/stretch/aspect="ignore"
 
 Esquerda=""
 Direita=""
-Cima=""
 Baixo=""
 Personagem=""
+Cima=""
 
 [input]
 
